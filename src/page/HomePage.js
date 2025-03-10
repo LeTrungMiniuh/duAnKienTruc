@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../component/Navbar';
 import './HomePage.css';
-
 const HomePage = () => {
   return (
     <div className="homepage-wrapper">
@@ -11,10 +10,10 @@ const HomePage = () => {
       <div className="featured-categories">
         <h2>DANH MỤC NỔI BẬT</h2>
         <div className="categories-container">
-          <div className="category-box">Đồ nam</div>
-          <div className="category-box">Áo thun nam</div>
-          <div className="category-box">Áo hoodie nam</div>
-          <div className="category-box">Đồ nữ</div>
+          <div className="category-box"><img src="/assets/doNam.jpg" alt="Đồ nam" />Đồ nam</div>
+          <div className="category-box"><img src="/assets/AoThun.jpg" alt="Áo thun" />Áo thun nam</div>
+          <div className="category-box"><img src="/assets/AoHodie.jpg" alt="Áo hodie nam" />Áo hoodie nam</div>
+          <div className="category-box"><img src="/assets/doNu.jpg" alt="Đồ nam" />Đồ nữ</div>
         </div>
       </div>
       
