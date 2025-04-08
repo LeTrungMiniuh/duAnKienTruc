@@ -1,0 +1,120 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .register-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.1; /* Tùy chỉnh độ mờ của background hình tròn */
+    z-index: 1;
+  }
+  
+  .register-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2; /* Đảm bảo hộp trắng hiển thị trên nền */
+  }
+  
+  .register-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50; /* Màu chữ "Đăng Ký" giống hình */
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #ff8c00; /* Màu cam khi focus, giống giao diện */
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff8c00; /* Màu cam cho nút Đăng ký */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #ff4500; /* Màu đậm hơn khi hover */
+  }
+  
+  .register-links {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .link {
+    display: block;
+    color: #ff8c00; /* Màu cam cho liên kết */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #ff4500;
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .register-box {
+      padding: 1.5rem;
+      width: 90%;
+    }
+  
+    .register-box h2 {
+      font-size: 1.2rem;
+    }
+  
+    .form-group input,
+    .register-button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    .link {
+      font-size: 0.8rem;
+    }
+  }

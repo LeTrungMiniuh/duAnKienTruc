@@ -1,0 +1,36 @@
+.quenmatkhau-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.quenmatkhau-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.orange-text {
+    color: #ff6200;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;}
